@@ -1,0 +1,139 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "process skill",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "StatusOfSalesforce",
+                    "slots": [
+                        {
+                            "name": "job",
+                            "type": "job"
+                        },
+                        {
+                            "name": "salesforcerevenue",
+                            "type": "sales"
+                        }
+                    ],
+                    "samples": [
+                        "tell me the current status of {salesforcerevenue} {job} ",
+                        "May I know the {salesforcerevenue} status with {job}",
+                        "Can you tell me the status on {salesforcerevenue} with {job}",
+                        "get me the status of {salesforcerevenue} with {job}",
+                        "what is the status of {salesforcerevenue} with {job}",
+                        " status of {salesforcerevenue} with {job}"
+                    ]
+                },
+                {
+                    "name": "DurationOfSalesRevenue",
+                    "slots": [
+                        {
+                            "name": "job",
+                            "type": "job"
+                        },
+                        {
+                            "name": "salesforcerevenue",
+                            "type": "sales"
+                        }
+                    ],
+                    "samples": [
+                        "tell me how much time taken to run  {salesforcerevenue} with {job}",
+                        "what is the time taken to run the {salesforcerevenue} with {job}",
+                        "Can you tell me the time taken to run the {salesforcerevenue} with {job}",
+                        "Duration of {salesforcerevenue} with {job}",
+                        "get me the duration of {salesforcerevenue} with {job}",
+                        "what is the duration of {salesforcerevenue} with {job}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "job",
+                    "values": [
+                        {
+                            "id": "target",
+                            "name": {
+                                "value": "job",
+                                "synonyms": [
+                                    "work flow",
+                                    "warehouse job",
+                                    "target job"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "sales",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "ariba returns",
+                                "synonyms": [
+                                    "Ariba returns",
+                                    "ariba returns"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ariba invoice",
+                                "synonyms": [
+                                    "Ariba Invoice",
+                                    "ariba invoice"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ariba purchase order",
+                                "synonyms": [
+                                    "Ariba Purchase Order",
+                                    "ariba purchase order"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "salesforce quote",
+                                "synonyms": [
+                                    "Salesforce quote",
+                                    "salesforce quote"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "salesforce revenue",
+                                "synonyms": [
+                                    "Salesforce Revenue",
+                                    "salesforce revenue"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
